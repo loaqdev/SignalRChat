@@ -1,0 +1,54 @@
+name: dockercompose6014825238483048724
+services:
+  realtimechat.redis:
+    command:
+      - redis-server
+      - --save
+      - "60"
+      - "1"
+      - --loglevel
+      - warning
+    container_name: chat_redis
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    restart: always
+    volumes:
+      - type: bind
+        source: C:\Users\ponch\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\ponch\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\ponch\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind: {}
+      - type: bind
+        source: C:\Users\ponch\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind: {}
+networks:
+  default:
+    name: dockercompose6014825238483048724_default

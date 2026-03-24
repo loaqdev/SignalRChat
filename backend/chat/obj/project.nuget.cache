@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "EBD+yyCtvbI=",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\Chat\\backend\\chat\\chat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponch\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\10.0.5\\microsoft.aspnetcore.signalr.common.10.0.5.nupkg.sha512",
+    "C:\\Users\\ponch\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\10.0.5\\microsoft.extensions.caching.stackexchangeredis.10.0.5.nupkg.sha512",
+    "C:\\Users\\ponch\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512",
+    "C:\\Users\\ponch\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\ponch\\.nuget\\packages\\stackexchange.redis\\2.7.27\\stackexchange.redis.2.7.27.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.AspNetCore.SignalR.Common не будет урезано. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, вероятно, не требуется.",
+      "projectPath": "C:\\Projects\\Chat\\backend\\chat\\chat.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Projects\\Chat\\backend\\chat\\chat.csproj",
+      "libraryId": "Microsoft.AspNetCore.SignalR.Common",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

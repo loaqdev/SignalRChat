@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>d4e028c0-e3b6-4855-935f-66cd69e1276d</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+		<DockerfileContext>.</DockerfileContext>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="10.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="10.0.5" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+	</ItemGroup>
+
+</Project>
